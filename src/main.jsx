@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export default function MainContent() {
+  return (
+    <main>
+      <h1>Ngazidja</h1>
+      <ul>
+        <li>good small</li>
+        <li>Natural Flavors</li>
+        <li>Slip Nice, Swim nice</li>
+      </ul>
+    </main>
+  );
+}

@@ -1,22 +1,21 @@
-import { createRoot } from "react-dom/client";
-const root = createRoot(document.getElementById("root"))
+import { createRoot } from "react-dom/client"
+import Header from "/src/header"
+import MainContent from "/src/main"
+import Footer from "/src/Footer"
 
 
-function affichage () {
+const root = createRoot(document.getElementById("root"));
+const ul= document.createElement("ul")
+ul.classNAme=""
 
-  return(
-      <main>
-        <img src="/src/assets/react.svg" alt="" />
-        <h1>Ngazidja</h1>
-        <ul>
-          <li>good small</li>
-          <li>Natural Flavors</li>
-          <li>Slip Nice, Swim nice</li>
-        </ul>
-      </main>
-  )
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
 }
 
-root.render(
-  affichage()
-)
+root.render(Page());
