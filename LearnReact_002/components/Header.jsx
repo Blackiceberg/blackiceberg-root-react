@@ -1,5 +1,8 @@
 export default function Header() {
-    return(
-        <nav>Welcomme BB</nav>
-    )
+  return (
+    <header>
+      <img src="/images/glob.png" alt="logo icon" />
+      <h1>my travel journal.</h1>
+    </header>
+  );
 }

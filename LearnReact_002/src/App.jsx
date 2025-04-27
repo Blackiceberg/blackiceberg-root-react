@@ -1,5 +1,12 @@
 import "./App.css";
+import Header from "/components/Header";
+import Entry from "/components/Entry";
 
 export default function App() {
-  return <h1>I'm the App component!</h1>;
+  return (
+    <>
+  <Header />
+  <Entry />
+  </>
+  )
 }
