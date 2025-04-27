@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
-.inter-<uniquifier> {
+.inter-<uniquifier > {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
-
 
 html,
 body {
@@ -33,13 +32,28 @@ header > img {
 header > h1 {
   font-size: 0.9rem;
   font-weight: 500;
-  font-family: "Inter";
 }
 
-article.journal-entry{
-display: flex;
+article.journal-entry {
+  display: flex;
 }
 
-article.main-image{
-  
+article.journal-entry .marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+article.journal-entry .main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
+
+article.journal-entry .main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
