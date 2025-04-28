@@ -1,39 +1,27 @@
-export default function Contact() {
+export default function Contact(props) {
+  console.log(props)
   return (
       <article className="contact-card">
         <img
-         src="https://urlr.me/yjhJaZ"
+         src={props.img}
           alt="Mr. Whiskerson" 
         />
-        <h3>Whiskerson</h3>
+        <h3>{props.name}</h3>
         <div className="info-group">
           <img
            src="https://urlr.me/5jGbnc"
            alt="phone icon"
             />
-          <p>(212) 555-1234</p>
+          <p>{props.phone}</p>
         </div>
         <div className="info-group">
             <img 
             src="https://urlr.me/ZnjSrd"
             alt="mail icon"
             />
-            <p>mr.whishkaz@catnap.meow</p>
+            <p>{props.email}</p>
         </div>
       </article>
   );
 }
 
-/* cat ; 
-https://urlr.me/dFyagB (Félix)
-
-https://urlr.me/yjhJaZ (Whiskerson)
-
-https://urlr.me/rRwUyA (Pumpkin)
-
-https://urlr.me/HqNpBG (Fluffykins)
-
-picto : 
-
-https://urlr.me/ZnjSrd : (Enveloppe)
-https://urlr.me/5jGbnc : (Telephone) */
