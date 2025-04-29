@@ -1,5 +1,4 @@
 export default function Contact(props) {
-  console.log(props)
   return (
       <article className="contact-card">
         <img
